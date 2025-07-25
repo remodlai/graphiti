@@ -77,7 +77,7 @@ def summarize_context(context: dict[str, Any]) -> list[Message]:
             
         <MESSAGES>
         {json.dumps(context['previous_episodes'], indent=2)}
-        {json.dumps(context['episode_content'], indent=2)}
+        {context['episode_content']}
         </MESSAGES>
         
         Given the above MESSAGES and the following ENTITY name, create a summary for the ENTITY. Your summary must only use

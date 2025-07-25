@@ -166,7 +166,7 @@ def extract_attributes(context: dict[str, Any]) -> list[Message]:
             content=f"""
 
         <MESSAGE>
-        {json.dumps(context['episode_content'], indent=2)}
+        {context['episode_content']}
         </MESSAGE>
         <REFERENCE TIME>
         {context['reference_time']}

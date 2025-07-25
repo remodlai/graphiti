@@ -248,7 +248,7 @@ def extract_attributes(context: dict[str, Any]) -> list[Message]:
 
         <MESSAGES>
         {json.dumps(context['previous_episodes'], indent=2)}
-        {json.dumps(context['episode_content'], indent=2)}
+        {context['episode_content']}
         </MESSAGES>
 
         Given the above MESSAGES and the following ENTITY, update any of its attributes based on the information provided
